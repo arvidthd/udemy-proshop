@@ -1,0 +1,36 @@
+{
+  "name": "vidshop-v2",
+  "version": "2.0.0",
+  "description": "ecommerce shop based on udemy course",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvidthd/udemy-proshop.git"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "Arvid Theodorus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arvidthd/udemy-proshop/issues"
+  },
+  "homepage": "https://github.com/arvidthd/udemy-proshop#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "dotenv": "^16.3.1",
+    "nodemon": "^2.0.22"
+  }
+}
